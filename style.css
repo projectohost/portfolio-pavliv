@@ -5,6 +5,7 @@ body {
     background-color:#070230;
     width: 100%;
     height: 100%;
+    color: #fff;
 }
 nav {
    display: flex;
@@ -32,8 +33,61 @@ nav {
 .cod {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: 350px;
-  width: 300px;
+  max-width: 600px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
   float: right;
+}
+/* 1. Головна секція (займає достатню ширину) */
+.hero {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. Контейнер, який розтягує вміст по горизонталі */
+.hero-container {
+    width: 90%;            /* Займає 90% ширини екрана */
+    max-width: 1200px;     /* Обмеження, щоб на великих моніторах не розтягувалося занадто сильно */
+    display: flex;
+    align-items: center;    /* Вирівнює текст і картинку по центру по вертикалі */
+    justify-content: space-between;
+    gap: 40px;             /* Відстань між текстом і картинкою */
+}
+
+/* 3. Текстова частина */
+.hero-content {
+    flex: 1;               /* Займає рівно 50% ширини */
+    max-width: 550px;
+}
+
+/* 4. Блок із зображенням */
+.hero-image-box {
+    flex: 1;               /* Займає другі 50% ширини */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 5. Подовжене та стильне зображення */
+.hero-img {
+    width: 100%;  
+    min-width: 100px;         /* Розтягується на всю ширину свого блоку */
+    height: 380px;         /* Фіксована висота робить картинку подовженою прямокутною */
+    object-fit: cover;     /* Автоматично обрізає фото під розмір без спотворення пропорцій! */
+    border-radius: 16px;   /* Закруглені кути, як на макеті */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* М'яка тінь */
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
