@@ -46,6 +46,9 @@ nav {
     padding: 60px 0;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgb(197, 184, 184); /* Легка лінія внизу для відділення секцій */
+    padding-bottom: 30px; /* Додаємо трохи більше відступу знизу */
+    margin-bottom: 30px; /* Відступ знизу для відділення від наступного контенту */
 }
 
 /* 2. Контейнер, який розтягує вміст по горизонталі */
@@ -90,4 +93,9 @@ body {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+}
+.about {
+  border-right: 1px solid rgb(197, 184, 184);
+  padding-right: 30px;
+  
 }
