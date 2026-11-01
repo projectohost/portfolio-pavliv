@@ -94,8 +94,31 @@ body {
   font-weight: <weight>;
   font-style: normal;
 }
-.about {
-  border-right: 1px solid rgb(197, 184, 184);
-  padding-right: 30px;
-  
+.about-skills-section {
+  display: flex;
+  gap: 40px; /* Відстань між блоками */
 }
+
+.about-me {
+  flex: 1;
+  /* Додаємо вертикальну лінію справа */
+  padding-right: 40px;
+  border-right: 1px solid rgb(197, 184, 184); /* Напівпрозора біла лінія під темну тему */
+}
+
+.skills {
+  flex: 1;
+}
+.logo1 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+.skills-name {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 450px;
+  text-align: center;
+}
+
+    
