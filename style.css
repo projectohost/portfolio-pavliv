@@ -108,11 +108,14 @@ body {
 
 .skills {
   flex: 1;
+  flexbox: 100%;
+  
+  
 }
 .logo1 {
   width: 100px;
   height: 100px;
-  background-color: #fff;
+ 
 }
 .skills-name {
   font-size: 18px;
@@ -120,5 +123,35 @@ body {
   margin-right: 450px;
   text-align: center;
 }
-
-    
+.logo2 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  
+}
+.logo3 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  
+}
+.center {
+  text-align: center;
+}
+.logo4 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+.logo5 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+.logo6 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color:rgb(12, 12, 223)
+  border-radius : 
+}
