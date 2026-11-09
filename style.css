@@ -97,13 +97,15 @@ body {
 .about-skills-section {
   display: flex;
   gap: 40px; /* Відстань між блоками */
+  border-bottom: 1px solid rgb(197, 184, 184); /* Легка лінія внизу для відділення секцій */
 }
 
 .about-me {
   flex: 1;
   /* Додаємо вертикальну лінію справа */
   padding-right: 40px;
-  border-right: 1px solid rgb(197, 184, 184); /* Напівпрозора біла лінія під темну тему */
+   border-right: 1px solid rgb(197, 184, 184); /* Напівпрозора біла лінія під темну тему */
+}
 }
 
 .skills {
@@ -122,17 +124,18 @@ body {
   margin-top: 10px;
   margin-right: 450px;
   text-align: center;
+   
+.
 }
 .logo2 {
   width: 100px;
   height: 100px;
-  display: flex;
   
 }
 .logo3 {
   width: 100px;
   height: 100px;
-  display: flex;
+  border-radius: 10%;
   
 }
 .center {
@@ -141,17 +144,67 @@ body {
 .logo4 {
   width: 100px;
   height: 100px;
-  display: flex;
 }
 .logo5 {
   width: 100px;
   height: 100px;
-  display: flex;
 }
 .logo6 {
   width: 100px;
   height: 100px;
+ background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+.skills-container {
   display: flex;
-  background-color:rgb(12, 12, 223)
-  border-radius : 
+  flex-direction: column;
+  align-items: center;
+ width: 100px;
+}
+
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Відстань між логотипами */
+  border: 1px solid rgb(197, 184, 184); /* Напівпрозора біла лінія під темну тему */
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Створює 3 однакових стовпці */
+  grid-template-rows: repeat(3, auto);   /* 3 рядки з автоматичною висотою під контент */
+  gap: 20px;                             /* Відстань між картками */
+  max-width: 900px;                      /* Ширина секції */
+  margin: 0 auto;                        /* Центрування всієї сітки на сторінці */
+  padding: 20px;
+}
+
+.skills-card {
+  background-color: #06348a36;             /* Темно-синій фон як на зображенні */
+  border-radius: 12px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);           /* Легкий ефект підняття при наведенні */
+}
+
+.skills-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.skills-name {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
 }
